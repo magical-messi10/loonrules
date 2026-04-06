@@ -1,0 +1,9 @@
+#!name=懂球帝去广告
+#!desc=单独提取的懂球帝去广告插件
+
+[Rewrite]
+^https?:\/\/ap\.dongdianqiu\.com\/plat\/v4 reject
+^https?:\/\/ap\.dongqiudi\.com\/plat\/v reject
+
+[MitM]
+hostname = ap.dongdianqiu.com, ap.dongqiudi.com
