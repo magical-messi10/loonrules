@@ -1,9 +1,17 @@
-#!name=懂球帝去广告
-#!desc=单独提取的懂球帝去广告插件
-
+#!name=懂球帝纯净版
+#!desc=版本日期：2026-04-07
+#!author=magical-messi10［https://github.com/magical-messi10］
+#!homepage=https://github.com/magical-messi10/loonrules
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Football.png
+#!system=iOS,iPadOS
+#!tag = 去广告, 懂球帝, magical-messi
+#!system_version = 
+#!loon_version =
 [Rewrite]
+# 拦截懂球帝广告接口
 ^https?:\/\/ap\.dongdianqiu\.com\/plat\/v4 reject
 ^https?:\/\/ap\.dongqiudi\.com\/plat\/v reject
 
 [MitM]
+# 解析包含广告的域名
 hostname = ap.dongdianqiu.com, ap.dongqiudi.com
